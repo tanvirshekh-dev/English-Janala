@@ -11,10 +11,6 @@
 .font-bangla{
     font-family: "Hind Siliguri", sans-serif;
 }
-.primary-text-color{
-    color:  #00BCFF;
-}
-
 /* navbar styles start */
 .navbar{
     background-color: var(--nav-bg-color);
