@@ -10,14 +10,39 @@ const loadLevelWord = (id)=>{
         .then(data => displayWords(data.data))
 }
 
+// {
+// "id": 4,
+// "level": 5,
+// "word": "Diligent",
+// "meaning": "পরিশ্রমী",
+// "pronunciation": "ডিলিজেন্ট"
+// }
+
 const displayWords = (words) => {
     const wordContainer = document.getElementById("word-container");
-    // wordContainer.innerHTML = "";
+    wordContainer.innerHTML = "";
 
+    if (words.length === 0) {
+        wordContainer.innerHTML = `
+        <div class="col-span-full text-center py-10 space-y-6">
+          <img class="mx-auto" src="./assets/alert-error.png" alt="When here is empty then show the alert icon">
+          <p class="font-bangla text-lg text-gray-500 font-normal">এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।</p>
+          <h2 class="text-4xl font-semibold font-bangla">নেক্সট Lesson এ যান</h2>
+        </div>
+        `;
+    }
     words.forEach((word) => {
         const wordCard = document.createElement("div");
         wordCard.innerHTML = `
-        <p>Hello</p>
+        <div class="bg-white rounded-xl text-center space-y-4 py-10 px-5 shadow-sm">
+          <h2 class="text-2xl font-bold">${word.word ? word.word : "শব্দ পাওয়া যায়নি"}</h2>
+          <p class="text-lg font-medium">Meaning /Pronounciation</p>
+          <div class="font-bangla text-2xl font-semibold">"${word.meaning ? word.meaning : "অর্থ পাওয়া যায়নি "} / ${word.pronunciation ? word.pronunciation : "Pronunciation পাওয়া যায়নি"}"</div>
+          <div class="flex justify-between items-center">
+            <button class="btn bg-[#1A91FF10] hover:bg-[#1A91FF70]"><i class="fa-solid fa-circle-info"></i></button>
+            <button class="btn bg-[#1A91FF10] hover:bg-[#1A91FF70]"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+        </div>
         `
         wordContainer.appendChild(wordCard)
     })

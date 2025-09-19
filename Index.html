@@ -6,7 +6,7 @@
     <title>English জানালা</title>
     <!-- fav-icon  -->
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
-    <!-- daisyUi cdn -->
+    <!-- daisyUi + tailwind cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
@@ -115,7 +115,9 @@
     <!-- navbar end -->
 
     <!-- header start  -->
-    <section class="flex flex-col-reverse md:flex-row w-11/12 mx-auto items-center mt-5">
+    <section
+      class="flex flex-col-reverse md:flex-row w-11/12 mx-auto items-center mt-5"
+    >
       <div class="hero-text-content flex-1 text-center md:text-left">
         <h2 class="text-5xl font-bold mb-6">
           <span class="text-sky-400">English </span> is Easy!!
@@ -127,12 +129,10 @@
         </p>
         <form class="flex flex-col w-1/2 space-y-4 mx-auto md:mx-0">
           <input type="text" placeholder="Enter Your Name" />
-          <input
-            type="password"
-            name=""
-            id="password"
-          />
-          <button class="btn btn-primary w-7/12 mx-auto md:mx-0">Get Started</button>
+          <input type="password" name="" id="password" />
+          <button class="btn btn-primary w-7/12 mx-auto md:mx-0">
+            Get Started
+          </button>
         </form>
       </div>
 
@@ -143,26 +143,29 @@
     <!-- header end -->
 
     <!-- main section start -->
-     <section>
-        <h2 class="text-4xl font-bold mb-8 text-center mt-24">
-          <span class="text-sky-400">Let's</span> Learn Vocabularies
-        </h2>
+    <section>
+      <h2 class="text-4xl font-bold mb-8 text-center mt-24">
+        <span class="text-sky-400">Let's</span> Learn Vocabularies
+      </h2>
 
-        <div id="lesson-container" class="flex flex-1 flex-wrap gap-5 justify-center mb-12 mx-1"> </div>
-     </section>
+      <div
+        id="lesson-container"
+        class="flex flex-1 flex-wrap gap-5 justify-center mb-12 mx-1"
+      ></div>
+    </section>
 
-     <section>
-        <div id="word-container" class="bg-gray-100 py-10 w-11/12 mx-auto my-10 rounded-xl grid grid-cols-3 gap-5">
-            <div class="bg-white px-5 py-10 text-center space-y-3 ml-3">
-                <h2>Eager</h2>
-                <p>Meaning /Pronounciation</p>
-                <div>"আগ্রহী / ইগার"</div>
-            </div>
+    <section>
+      <div id="word-container" class="bg-gray-100 p-10 w-11/12 mx-auto my-10 rounded-xl grid grid-cols-3 gap-5">
+        
+        <div class="col-span-full text-center py-10 space-y-6">
+          <p class="font-bangla text-lg text-gray-500 font-normal">আপনি এখনো কোন Lesson Select করেন নি</p>
+          <h2 class="text-4xl font-semibold font-bangla">একটি Lesson Select করুন।</h2>
         </div>
-     </section>
+      </div>
+    </section>
     <!-- main section end -->
 
     <!-- script index js file integration -->
-     <script src="script/index.js"></script>
+    <script src="script/index.js"></script>
   </body>
 </html>
