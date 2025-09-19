@@ -1,0 +1,29 @@
+*{
+    /* margin: 0; */
+    /* padding: 0; */
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* shared styles */
+:root{
+    --nav-bg-color: #edf6ff; 
+}
+.font-bangla{
+    font-family: "Hind Siliguri", sans-serif;
+}
+.primary-text-color{
+    color:  #00BCFF;
+}
+
+/* navbar styles start */
+.navbar{
+    background-color: var(--nav-bg-color);
+}
+/* navbar styles end */
+
+/* header part start */
+.hero-text-content form > input{
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+/* header part end */
