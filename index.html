@@ -154,14 +154,40 @@
       ></div>
     </section>
 
+    <section id="spinning" class="flex justify-center items-center hidden">
+      <span class="loading loading-bars loading-xl"></span>
+    </section>
+
     <section>
-      <div id="word-container" class="bg-gray-100 p-10 w-11/12 mx-auto my-10 rounded-xl grid grid-cols-3 gap-5">
-        
+      <div
+        id="word-container"
+        class="bg-gray-100 p-10 w-11/12 mx-auto my-10 rounded-xl grid grid-cols-3 gap-5"
+      >
         <div class="col-span-full text-center py-10 space-y-6">
-          <p class="font-bangla text-lg text-gray-500 font-normal">আপনি এখনো কোন Lesson Select করেন নি</p>
-          <h2 class="text-4xl font-semibold font-bangla">একটি Lesson Select করুন।</h2>
+          <p class="font-bangla text-lg text-gray-500 font-normal">
+            আপনি এখনো কোন Lesson Select করেন নি
+          </p>
+          <h2 class="text-4xl font-semibold font-bangla">
+            একটি Lesson Select করুন।
+          </h2>
         </div>
       </div>
+    </section>
+
+    <section>
+      <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <div id="details-container" class="space-y-4">
+            
+          </div>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </section>
     <!-- main section end -->
 

@@ -11,6 +11,10 @@
 .font-bangla{
     font-family: "Hind Siliguri", sans-serif;
 }
+.active{
+    background-color: #422AD5;
+    color: white;
+}
 /* navbar styles start */
 .navbar{
     background-color: var(--nav-bg-color);
