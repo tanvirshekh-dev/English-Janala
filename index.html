@@ -154,8 +154,21 @@
       ></div>
     </section>
 
-    <section id="spinning" class="flex justify-center items-center hidden">
-      <span class="loading loading-bars loading-xl"></span>
+    <section>
+      <div class="join flex justify-center">
+        <div>
+          <label class="input validator join-item">
+            <input id="input-search" type="text" placeholder="Search Your Vocabulary" required />
+          </label>
+        </div>
+        <button id="btn-search" class="btn btn-primary join-item">Search</button>
+      </div>
+    </section>
+
+    <section>
+      <div id="spinning" class="flex justify-center items-center hidden">
+        <span class="loading loading-bars loading-xl"></span>
+      </div>
     </section>
 
     <section>
@@ -177,9 +190,7 @@
     <section>
       <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
         <div class="modal-box">
-          <div id="details-container" class="space-y-4">
-            
-          </div>
+          <div id="details-container" class="space-y-4"></div>
           <div class="modal-action">
             <form method="dialog">
               <!-- if there is a button in form, it will close the modal -->
